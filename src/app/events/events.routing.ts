@@ -5,7 +5,7 @@ import { EventsComponent }    from './events.component';
 
 
 const eventsRoutes: Routes = [
-    { path: 'events',  component: EventsComponent },
+    { path: '',  component: EventsComponent },
     // { path: 'hero/:id', component: HeroDetailComponent }
 ];
 

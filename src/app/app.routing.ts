@@ -5,6 +5,15 @@ import {Routes, RouterModule} from '@angular/router';
 import {FrontpageComponent} from './frontpage/frontpage.component';
 import {NewsComponent} from './news/news.component';
 
+
+const eventRoutes: Routes = [
+    {
+        path: 'events',
+        loadChildren: 'app/events/events.module#EventsModule'
+
+    }
+];
+
 const appRoutes: Routes = [
     {
         path: '',
@@ -12,7 +21,8 @@ const appRoutes: Routes = [
     },
     {
         path: 'news', component: NewsComponent
-    }
+    },
+    ...eventRoutes
 
 ];
 

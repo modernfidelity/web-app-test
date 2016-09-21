@@ -26,7 +26,7 @@ import { EventsModule } from "./events/events.module";
     FormsModule,
     HttpModule,
     routing,
-    EventsModule
+    // EventsModule
   ],
   providers: [
     appRoutingProviders
