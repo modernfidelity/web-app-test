@@ -7,8 +7,13 @@ import { AppComponent } from './app.component';
 import { routing,
     appRoutingProviders }  from './app.routing';
 
+
+// Components
 import { NewsComponent } from './news/news.component';
 import { FrontpageComponent } from './frontpage/frontpage.component';
+
+// Modules
+import { EventsModule } from "./events/events.module";
 
 @NgModule({
   declarations: [
@@ -20,7 +25,8 @@ import { FrontpageComponent } from './frontpage/frontpage.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    routing,
+    EventsModule
   ],
   providers: [
     appRoutingProviders
